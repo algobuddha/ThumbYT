@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YT Thumbnail Downloader</title>
+    <style>
+        body {
+            width: 300px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            display: none;
+        }
+        button {
+            background: red;
+            color: white;
+            border: none;
+            padding: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 5px;
+            width: 90%;
+        }
+        #download-btn {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h3>YT Thumbnail Downloader</h3>
+    <img id="thumbnail" alt="Thumbnail Preview">
+    <button id="fetch-btn">Get Thumbnail</button>
+    <button id="download-btn">Download</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>
